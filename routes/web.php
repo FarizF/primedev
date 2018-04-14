@@ -1,15 +1,5 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Reference;
 
 Route::get('/', function () {
   return view('welcome', [
@@ -30,13 +20,13 @@ Route::get('/projects', function() {
 });
 
 Route::get('/references', function() {
-  $references = DB::table('references')->latest()->get();
+  $references = Reference::all();
 
   return view('references.index', compact('references'));
 });
 
 Route::get('/references/{reference}', function($id) {
-  $reference = DB::table('references')->find($id);
+  $reference = Reference::find($id);
 
   return view('references.single', compact('reference'));
 });
