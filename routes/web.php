@@ -12,9 +12,39 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome', [
+    'name' => 'Fariz'
+  ]);
 });
 
-Auth::routes();
+Route::get('/about', function() {
+  return view('about');
+});
+
+Route::get('/portfolio', function() {
+  return view('portfolio');
+});
+
+Route::get('/projects', function() {
+  return view('projects');
+});
+
+Route::get('/references', function() {
+  $references = DB::table('references')->latest()->get();
+
+  return view('references.index', compact('references'));
+});
+
+Route::get('/references/{reference}', function($id) {
+  $reference = DB::table('references')->find($id);
+
+  return view('references.single', compact('reference'));
+});
+
+Route::get('/contact', function() {
+  return view('contact');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Auth::routes();
