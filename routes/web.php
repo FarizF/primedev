@@ -1,31 +1,39 @@
 <?php
 use App\Reference;
 
-Route::get('/', function () {
-  return view('welcome', [
-    'name' => 'Fariz'
-  ]);
-});
+// Home
+Route::get('/', 'MainController@index');
 
-Route::get('/about', function() {
-  return view('about');
-});
 
 Route::get('/portfolio', function() {
   return view('portfolio');
 });
 
-Route::get('/projects', function() {
-  return view('projects');
+// References
+Route::get('/references', 'ReferencesController@index');
+Route::get('/references/{reference}', 'ReferencesController@single');
+
+Route::get('/about', function() {
+    return view('about');
 });
 
-Route::get('/references', 'ReferencesController@index');
-Route::get('/reference/{reference}', 'ReferencesController@single');
-
+// Login
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+
+// EXAMPLE QUERIES
 // Route::get('/contact', function() {
 //   return view('contact');
 // });
 
-// Auth::routes();
+// Route::get('/projects', function() {
+//     return $projects;
+// });
+
+// DB class
+// Route::get('/projects', function() {
+//     $projects = DB::table('projects')->get();
+//
+//     return view('project.index', compact($projects));
+// })
