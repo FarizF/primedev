@@ -20,8 +20,8 @@
     },
     "dependencies": {
         "ajv": "^6.4.0",
+        "font-face-mixin": "^1.1.0",
         "graceful-fs": "^4.1.11",
-        "gulp": "^3.9.1",
         "minimatch": "^3.0.4"
     }
 }
