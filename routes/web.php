@@ -1,25 +1,17 @@
 <?php
 use App\Reference;
 
-// Home
+// Main routes
 Route::get('/', 'MainController@index');
-
-
-Route::get('/portfolio', function() {
-  return view('portfolio');
-});
+Route::get('/about', 'MainController@toAbout');
+Route::get('/portfolio', 'MainController@toPortfolio');
 
 // References
 Route::get('/references', 'ReferencesController@index');
 Route::get('/references/{reference}', 'ReferencesController@single');
 
-Route::get('/about', function() {
-    return view('about');
-});
-
 // Login
 Route::get('/home', 'HomeController@index')->name('home');
-
 
 
 // EXAMPLE QUERIES

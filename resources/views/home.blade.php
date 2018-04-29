@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+@extends('layouts.master')
+
+@section('content')
+    <div id="content">
+        teastwstfgverdgzsedesgrer
+    </div>
+@endsection

@@ -17,5 +17,11 @@
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "ajv": "^6.4.0",
+        "graceful-fs": "^4.1.11",
+        "gulp": "^3.9.1",
+        "minimatch": "^3.0.4"
     }
 }
