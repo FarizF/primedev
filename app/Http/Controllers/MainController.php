@@ -10,10 +10,6 @@ class MainController extends Controller
         return view('home');
     }
 
-    public function toAbout() {
-        return view('about');
-    }
-
     public function toPortfolio() {
         return view('portfolio');
     }

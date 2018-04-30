@@ -3,7 +3,6 @@ use App\Reference;
 
 // Main routes
 Route::get('/', 'MainController@index');
-Route::get('/about', 'MainController@toAbout');
 Route::get('/portfolio', 'MainController@toPortfolio');
 
 // References

@@ -43219,10 +43219,6 @@ var app = new Vue({
   el: '#app'
 });
 
-$(document).ready(function () {
-  console.log("body");
-});
-
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":
