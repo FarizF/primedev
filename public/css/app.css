@@ -4,11 +4,16 @@
   font-weight: normal;
 }
 
-#content {
+body {
+  margin: 0;
+}
+
+#photogradient {
   color: #FFF;
   font-family: Hind;
   background: url(/images/mountains-sky-bali-sunrise-kintamani-indonesia-gradient.jpg?ccf0b8985c8385f56eb4ef77257156a8) no-repeat center center;
   height: 100vh;
   width: 100%;
+  background-size: cover;
 }
 
