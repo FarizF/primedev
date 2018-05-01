@@ -158,6 +158,10 @@ nav .container #desktopmenu a::after {
   font-size: 1.05rem;
 }
 
+#homephoto .gradientoverlay #intro .text b {
+  font-weight: 500;
+}
+
 #homephoto .gradientoverlay #intro .verticalline {
   width: 2px;
   height: 170px;
