@@ -112,6 +112,7 @@ nav .container #desktopmenu a::after {
 nav .container #desktopmenu #hbmenu {
   width: 2rem;
   cursor: pointer;
+  margin-right: 1em;
   display: none;
 }
 
