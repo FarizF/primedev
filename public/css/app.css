@@ -1,19 +1,175 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Hind";
+  src: url(/fonts/Hind-Light.ttf?bea2b56690c1c53249f9fd8bd77a1a6d) format("truetype");
+  font-weight: 300;
+}
+
 @font-face {
   font-family: "Hind";
   src: url(/fonts/Hind-Regular.ttf?d4ddc8177b52ba76cb976e55db4c05d7) format("truetype");
-  font-weight: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url(/fonts/Hind-Medium.ttf?d48035e32f535bcd3db1051f987b5bda) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url(/fonts/Hind-SemiBold.ttf?1603daa6718e6efa64a65298eef5dc62) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url(/fonts/Hind-Bold.ttf?63ddc19d8534da1ddd3898ce1ddfb5a4) format("truetype");
+  font-weight: 700;
 }
 
 body {
+  font-family: Hind;
+  font-weight: 300;
   margin: 0;
 }
 
-#photogradient {
+h1 {
+  font-weight: 300;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+}
+
+nav .container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+nav .container #logolink {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+nav .container #logolink img {
+  max-width: 380px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+nav .container #desktopmenu {
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.23rem;
+}
+
+nav .container #desktopmenu a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 1em;
+  font-weight: 400;
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+}
+
+nav .container #desktopmenu a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+nav .container #desktopmenu a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#homephoto {
   color: #FFF;
   font-family: Hind;
-  background: url(/images/mountains-sky-bali-sunrise-kintamani-indonesia-gradient.jpg?ccf0b8985c8385f56eb4ef77257156a8) no-repeat center center;
+  background: url(/images/mountains-sky-bali-sunrise-kintamani-indonesia-webresize.jpg?f1407f949b9b330facf4ff1bad3b7a77) no-repeat center center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
+}
+
+#homephoto .gradientoverlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(115deg, rgba(0, 96, 255, 0.52), rgba(221, 35, 96, 0.52));
+  text-align: center;
+}
+
+#homephoto .gradientoverlay #intro {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1600px;
+  height: 100%;
+  margin: auto;
+  padding: 0 45px;
+}
+
+#homephoto .gradientoverlay #intro .text {
+  width: 45%;
+  text-align: right;
+}
+
+#homephoto .gradientoverlay #intro .text h1 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+#homephoto .gradientoverlay #intro .text p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+#homephoto .gradientoverlay #intro .verticalline {
+  width: 2px;
+  height: 170px;
+  background-color: #FFF;
+  margin: 0 40px;
+}
+
+#homephoto .gradientoverlay #intro #mybigface {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%;
   background-size: cover;
 }
 

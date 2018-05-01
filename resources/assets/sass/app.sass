@@ -2,8 +2,28 @@
 // Fonts
 @font-face
   font-family: "Hind"
+  src: url('../fonts/Hind/Hind-Light.ttf') format('truetype')
+  font-weight: 300
+
+@font-face
+  font-family: "Hind"
   src: url('../fonts/Hind/Hind-Regular.ttf') format('truetype')
-  font-weight: normal
+  font-weight: 400
+
+@font-face
+  font-family: "Hind"
+  src: url('../fonts/Hind/Hind-Medium.ttf') format('truetype')
+  font-weight: 500
+
+@font-face
+  font-family: "Hind"
+  src: url('../fonts/Hind/Hind-SemiBold.ttf') format('truetype')
+  font-weight: 600
+
+@font-face
+  font-family: "Hind"
+  src: url('../fonts/Hind/Hind-Bold.ttf') format('truetype')
+  font-weight: 700
 
 // Variables
 @import "util/variables"
@@ -12,12 +32,110 @@
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 body
+  font-family: Hind
+  font-weight: 300
   margin: 0
 
-#photogradient
+h1
+  font-weight: 300
+
+nav
+  position: absolute
+  width: 100%
+  padding: 20px 0
+
+  .container
+    display: inline-flex
+    justify-content: space-between
+    width: 100%
+
+    #logolink
+      display: inline-block
+      margin-left: 30px
+      margin-right: auto
+
+      img
+        max-width: 380px
+        vertical-align: middle
+        margin-left: 0.5rem
+
+    #desktopmenu
+      margin-left: auto
+      margin-right: 30px
+      margin-bottom: 15px
+      display: flex
+      font-size: 1.23rem
+
+      a
+        align-self: flex-end
+        padding: 0 1em
+        font-weight: 400
+        color: #FFF
+        text-decoration: none
+        position: relative
+
+        &:hover::after
+          opacity: 1
+          transform: translateY(0)
+
+        &::after
+          content: ''
+          position: absolute
+          top: 100%
+          left: 0
+          width: 100%
+          height: 4px
+          background: rgba(0,0,0,0.1)
+          opacity: 0
+          transition: opacity 0.3s, transform 0.3s
+          transform: translateY(10px)
+
+
+#homephoto
   color: $primary-color
   font-family: Hind
-  background: url('../images/mountains-sky-bali-sunrise-kintamani-indonesia-gradient.jpg') no-repeat center center
+  background: url('../images/mountains-sky-bali-sunrise-kintamani-indonesia-webresize.jpg') no-repeat center center
+  background-size: cover
   height: 100vh
   width: 100%
-  background-size: cover
+
+  .gradientoverlay
+    width: 100%
+    height: 100%
+    background: linear-gradient(115deg, rgba(0, 96, 255, .52), rgba(221, 35, 96, .52))
+    text-align: center
+
+    #intro
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      max-width: 1600px
+      height: 100%
+      margin: auto
+      padding: 0 45px
+
+      .text
+        width: 45%
+        text-align: right
+
+        h1
+          font-size: 2.3rem
+          margin: 0
+
+        p
+          margin: 0
+          font-size: 1.05rem
+
+      .verticalline
+        width: 2px
+        height: 170px
+        background-color: #FFF
+        margin: 0 40px
+
+      #mybigface
+        width: 200px
+        height: 200px
+        // border: 4px solid #FFF
+        border-radius: 50%
+        background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%
+        background-size: cover
