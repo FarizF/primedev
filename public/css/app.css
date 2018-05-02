@@ -55,11 +55,12 @@ nav .container {
 
 nav .container #logolink {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 2rem;
   margin-right: auto;
 }
 
 nav .container #logolink img {
+  width: 100%;
   max-width: 380px;
   vertical-align: middle;
   margin-left: 0.5rem;
@@ -67,7 +68,7 @@ nav .container #logolink img {
 
 nav .container #desktopmenu {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 2rem;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,15 +110,23 @@ nav .container #desktopmenu a::after {
           transform: translateY(10px);
 }
 
-nav .container #desktopmenu #hbmenu {
+nav .container #desktopmenu a img {
+  width: 100%;
+}
+
+nav .container #hbmenu {
   width: 2rem;
   cursor: pointer;
-  margin-right: 1em;
+  margin-right: 2rem;
+  margin-left: auto;
+  margin-bottom: 20px;
   display: none;
 }
 
-nav .container #desktopmenu #hbmenu img {
-  width: 100%;
+nav .container #hbmenu img {
+  width: inherit;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #homephoto {
@@ -153,7 +162,9 @@ nav .container #desktopmenu #hbmenu img {
 }
 
 #homephoto .gradientoverlay #intro .text {
-  width: 45%;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
   text-align: right;
 }
 
@@ -185,5 +196,74 @@ nav .container #desktopmenu #hbmenu img {
   border-radius: 50%;
   background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%;
   background-size: cover;
+}
+
+@media screen and (max-width: 1460px) {
+  #homephoto .gradientoverlay #intro .text {
+    -webkit-box-flex: 0.8;
+        -ms-flex: 0.8;
+            flex: 0.8;
+  }
+
+  #homephoto .gradientoverlay #intro .text h1 {
+    font-size: 2rem;
+  }
+
+  #homephoto .gradientoverlay #intro .text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #homephoto .gradientoverlay #intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  #homephoto .gradientoverlay #intro .text {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  #homephoto .gradientoverlay #intro .text h1 {
+    font-size: 1.6rem;
+  }
+
+  #homephoto .gradientoverlay #intro .verticalline {
+    display: none;
+  }
+
+  nav .container #logolink {
+    margin-left: 1rem;
+    margin-right: 6rem;
+  }
+
+  nav .container #desktopmenu {
+    display: none;
+  }
+
+  nav .container #hbmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav .container #hbmenu {
+    margin-bottom: 10px;
+  }
 }
 

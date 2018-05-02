@@ -31,6 +31,8 @@
 // // Bootstrap
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+
+
 body
   font-family: Hind
   font-weight: 300
@@ -50,17 +52,18 @@ nav
 
     #logolink
       display: inline-block
-      margin-left: 30px
+      margin-left: 2rem
       margin-right: auto
 
       img
+        width: 100%
         max-width: 380px
         vertical-align: middle
         margin-left: 0.5rem
 
     #desktopmenu
       margin-left: auto
-      margin-right: 30px
+      margin-right: 2rem
       margin-bottom: 15px
       display: flex
       align-items: flex-end
@@ -89,14 +92,20 @@ nav
           transition: opacity 0.3s, transform 0.3s
           transform: translateY(10px)
 
-      #hbmenu
-        width: 2rem
-        cursor: pointer
-        margin-right: 1em
-        display: none
-
         img
           width: 100%
+
+    #hbmenu
+      width: 2rem
+      cursor: pointer
+      margin-right: 2rem
+      margin-left: auto
+      margin-bottom: 20px
+      display: none
+
+      img
+        width: inherit
+        align-self: flex-end
 
 #homephoto
   color: $primary-color
@@ -122,7 +131,7 @@ nav
       padding: 0 45px
 
       .text
-        width: 45%
+        flex: 0.6
         text-align: right
 
         h1
@@ -150,3 +159,57 @@ nav
         border-radius: 50%
         background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%
         background-size: cover
+
+
+@media screen and (max-width: 1460px)
+  #homephoto
+    .gradientoverlay
+      #intro
+        .text
+          flex: 0.8
+
+          h1
+            font-size: 2rem
+          p
+            font-size: 1rem
+
+@media screen and (max-width: 900px)
+  #homephoto
+    .gradientoverlay
+      #intro
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        .text
+          flex: initial
+          text-align: center
+          margin-bottom: 40px
+          padding-top: 40px
+
+          h1
+            font-size: 1.6rem
+
+        .verticalline
+          display: none
+
+        #mybigface
+
+  nav
+    .container
+      #logolink
+        margin-left: 1rem
+        margin-right: 6rem
+
+      #desktopmenu
+        display: none
+
+      #hbmenu
+        display: flex
+
+
+@media screen and (max-width: 430px)
+  nav
+    .container
+      #hbmenu
+        margin-bottom: 10px

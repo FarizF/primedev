@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Fariz Fakkel</title>
+        <title>Fariz Fakkel - My Profile</title>
         @include('includes.styles')
         @include('includes.scripts')
         @include('includes.fonts')
