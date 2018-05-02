@@ -237,10 +237,6 @@ nav .container #hbmenu img {
     padding-top: 40px;
   }
 
-  #homephoto .gradientoverlay #intro .text h1 {
-    font-size: 1.6rem;
-  }
-
   #homephoto .gradientoverlay #intro .verticalline {
     display: none;
   }
@@ -262,6 +258,10 @@ nav .container #hbmenu img {
 }
 
 @media screen and (max-width: 430px) {
+  #homephoto .gradientoverlay #intro .text h1 {
+    font-size: 1.6rem;
+  }
+
   nav .container #hbmenu {
     margin-bottom: 10px;
   }
