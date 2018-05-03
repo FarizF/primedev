@@ -14,7 +14,9 @@
           </p>
         </div>
         <div class="verticalline"></div>
-        <div id="mybigface"></div>
+        <div id="profile">
+          <div id="mybigface"></div>
+        </div>
       </div>
     </div>
   </div>

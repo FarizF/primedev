@@ -66,7 +66,7 @@ nav .container #logolink img {
   margin-left: 0.5rem;
 }
 
-nav .container #desktopmenu {
+nav .container #menu {
   margin-left: auto;
   margin-right: 2rem;
   margin-bottom: 15px;
@@ -79,7 +79,7 @@ nav .container #desktopmenu {
   font-size: 1.23rem;
 }
 
-nav .container #desktopmenu a {
+nav .container #menu a {
   padding: 0 1em;
   font-weight: 400;
   color: #FFF;
@@ -87,13 +87,13 @@ nav .container #desktopmenu a {
   position: relative;
 }
 
-nav .container #desktopmenu a:hover::after {
+nav .container #menu a:hover::after {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-nav .container #desktopmenu a::after {
+nav .container #menu a::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -110,23 +110,23 @@ nav .container #desktopmenu a::after {
           transform: translateY(10px);
 }
 
-nav .container #desktopmenu a img {
+nav .container #menu a img {
   width: 100%;
 }
 
-nav .container #hbmenu {
-  width: 2rem;
+nav .container #hbbutton {
+  width: 1.5rem;
   cursor: pointer;
   margin-right: 2rem;
   margin-left: auto;
-  margin-bottom: 20px;
   display: none;
 }
 
-nav .container #hbmenu img {
+nav .container #hbbutton img {
   width: inherit;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 1.2rem;
 }
 
 #homephoto {
@@ -244,27 +244,24 @@ nav .container #hbmenu img {
   nav .container #logolink {
     margin-left: 1rem;
     margin-right: 6rem;
+    max-width: 300px;
   }
 
-  nav .container #desktopmenu {
+  nav .container #menu {
     display: none;
   }
 
-  nav .container #hbmenu {
+  nav .container #hbbutton {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
   #homephoto .gradientoverlay #intro .text h1 {
     font-size: 1.6rem;
     margin-bottom: 5px;
-  }
-
-  nav .container #hbmenu {
-    margin-bottom: 10px;
   }
 }
 

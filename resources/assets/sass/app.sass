@@ -61,7 +61,7 @@ nav
         vertical-align: middle
         margin-left: 0.5rem
 
-    #desktopmenu
+    #menu
       margin-left: auto
       margin-right: 2rem
       margin-bottom: 15px
@@ -95,17 +95,17 @@ nav
         img
           width: 100%
 
-    #hbmenu
-      width: 2rem
+    #hbbutton
+      width: 1.5rem
       cursor: pointer
       margin-right: 2rem
       margin-left: auto
-      margin-bottom: 20px
       display: none
 
       img
         width: inherit
-        align-self: flex-end
+        align-self: center
+        margin-top: 1.2rem
 
 #homephoto
   color: $primary-color
@@ -197,15 +197,16 @@ nav
       #logolink
         margin-left: 1rem
         margin-right: 6rem
+        max-width: 300px
 
-      #desktopmenu
+      #menu
         display: none
 
-      #hbmenu
+      #hbbutton
         display: flex
 
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 480px)
   #homephoto
     .gradientoverlay
       #intro
@@ -213,8 +214,3 @@ nav
           h1
             font-size: 1.6rem
             margin-bottom: 5px
-
-  nav
-    .container
-      #hbmenu
-        margin-bottom: 10px
