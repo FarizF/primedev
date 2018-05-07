@@ -265,3 +265,13 @@ nav .container #hbbutton img {
   }
 }
 
+@media screen and (max-width: 480px) and (max-height: 605px) {
+  #homephoto {
+    height: auto;
+  }
+
+  #homephoto .gradientoverlay {
+    padding: 40px 0;
+  }
+}
+
