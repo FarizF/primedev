@@ -20,4 +20,9 @@
       </div>
     </div>
   </div>
+  <div id="moreaboutme"></div>
+  <div id="skills"></div>
+  <footer>
+    
+  </footer>
 @endsection
