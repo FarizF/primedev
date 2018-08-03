@@ -32,12 +32,17 @@
 
 body {
   font-family: Hind;
+  font-size: 1.05rem;
   font-weight: 300;
   margin: 0;
 }
 
 h1 {
   font-weight: 300;
+}
+
+b {
+  font-weight: 500;
 }
 
 nav {
@@ -146,9 +151,9 @@ nav .container #hbbutton img {
 }
 
 #homephoto .gradientoverlay #intro {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -175,11 +180,6 @@ nav .container #hbbutton img {
 
 #homephoto .gradientoverlay #intro .text p {
   margin: 0;
-  font-size: 1.05rem;
-}
-
-#homephoto .gradientoverlay #intro .text b {
-  font-weight: 500;
 }
 
 #homephoto .gradientoverlay #intro .verticalline {
@@ -196,6 +196,50 @@ nav .container #hbbutton img {
   border-radius: 50%;
   background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%;
   background-size: cover;
+}
+
+#moreaboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+}
+
+#moreaboutme #actionimage {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  background: url(/images/actionphotosnscroppedbwt.jpg) 0% 85%;
+  background-size: cover;
+}
+
+#moreaboutme .text {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#moreaboutme .text * {
+  width: 80%;
+}
+
+#moreaboutme .text h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1460px) {

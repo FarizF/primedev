@@ -8,8 +8,9 @@
         @include('includes.fonts')
     </head>
     <body>
-        @include('layouts.nav')
+        @include('layouts.nav.nav')
         @yield('content')
         @include('layouts.footer')
+        @include('layouts.nav.mobilenav')
     </body>
 </html>

@@ -32,14 +32,17 @@
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-
 body
   font-family: Hind
+  font-size: 1.05rem
   font-weight: 300
   margin: 0
 
 h1
   font-weight: 300
+
+b
+  font-weight: 500
 
 nav
   position: absolute
@@ -122,7 +125,7 @@ nav
     text-align: center
 
     #intro
-      display: inline-flex
+      display: flex
       align-items: center
       justify-content: center
       max-width: 1600px
@@ -140,10 +143,6 @@ nav
 
         p
           margin: 0
-          font-size: 1.05rem
-
-        b
-          font-weight: 500
 
       .verticalline
         width: 2px
@@ -160,6 +159,29 @@ nav
         background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%
         background-size: cover
 
+#moreaboutme
+  display: flex
+  height: 40vh
+
+  #actionimage
+    flex: 0.4
+    background: url(/images/actionphotosnscroppedbwt.jpg) 0% 85%
+    background-size: cover
+
+  .text
+    flex: 0.6
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    *
+      width: 80%
+
+    h2
+      font-size: 2rem
+      margin: 0
+      font-weight: 300
 
 @media screen and (max-width: 1460px)
   #homephoto
