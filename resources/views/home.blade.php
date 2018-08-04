@@ -27,7 +27,7 @@
       <h2>About Me</h2>
       <p>
         Hi! I'm Fariz, and I'm a software engineering student at the Amsterdam
-        University of Applied Sciences. I am currently based in Almere, the
+        University of Applied Sciences (AUAS). I am currently based in Almere, the
         Netherlands. During my studies at the AUAS, I have been active as a (Wordpress) web
         developer and as an Android app developer creating
         <a href="/portfolio">solutions</a> for many companies, both locally and
@@ -39,7 +39,50 @@
   </div>
 
   <div id="skills">
+    <div class="title">
+      <h2>Skills</h2>
+      <b>I can do pretty cool things</b>
+    </div>
 
+    <div class="container">
+      <div class="skillbox">
+        <img src="">
+        <b>Programming</b>
+        <p>Most at </p>
+      </div>
+
+      <div class="skillbox">
+        <img src="">
+        <b>Software Design</b>
+        <p></p>
+      </div>
+
+      <div class="skillbox">
+        <img src="">
+        <b>Development Processes</b>
+        <p>Very familiar with several work methods (Agile, waterfall), educates
+        and even leads team members when necessary</p>
+      </div>
+
+      <div class="skillbox">
+        <img src="">
+        <b>Image and Video Editing</b>
+        <p></p>
+      </div>
+
+      <div class="skillbox">
+        <img src="">
+        <b>Forward Thinking and Elaborating</b>
+        <p></p>
+      </div>
+
+      <div class="skillbox">
+        <img src="">
+        <b>Being a Generally Amazing Guy 👀</b>
+        <p>Ridiculously empathic, and has the tendency to want make your sides
+        hurt from time to time</p>
+      </div>
+    </div>
   </div>
 
   <div id="contact">
