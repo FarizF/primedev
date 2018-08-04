@@ -51,6 +51,13 @@ b {
   font-weight: 500;
 }
 
+.isDisabled {
+  color: currentColor;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
+
 nav {
   position: absolute;
   width: 100%;
@@ -208,7 +215,7 @@ nav .container #hbbutton img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40vh;
+  height: 48vh;
 }
 
 #moreaboutme #actionimage {
@@ -248,7 +255,6 @@ nav .container #hbbutton img {
 }
 
 #skills {
-  height: 48vh;
   background: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,26 +269,27 @@ nav .container #hbbutton img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6vh 0;
+  padding: 5vh 0 5vh;
 }
 
 #skills .title {
   text-align: center;
+  margin-bottom: 2.5em;
 }
 
 #skills .title h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 #skills .title b {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 #skills .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
   margin: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -291,6 +298,7 @@ nav .container #hbbutton img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -299,6 +307,98 @@ nav .container #hbbutton img {
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
   text-align: center;
+  margin: 0 40px 4vh;
+}
+
+#skills .container .skillbox .imgcontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#skills .container .skillbox .imgcontainer img {
+  margin: 0 auto 0.8em;
+  display: block;
+  height: 50px;
+}
+
+#skills .container .skillbox b {
+  font-size: 1.2rem;
+}
+
+#skills .container .skillbox p {
+  font-size: 0.8rem;
+}
+
+#skills #moreskills {
+  text-align: center;
+}
+
+#references {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6vh 0;
+}
+
+#references .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+#references .title h2 {
+  font-size: 2.5rem;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6vh 0;
+}
+
+#contact .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+#contact .title h2 {
+  font-size: 2.4rem;
+}
+
+#contact .title b {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#contact #inputcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact #inputcontainer .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1460px) {

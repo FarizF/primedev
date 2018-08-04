@@ -28,9 +28,9 @@
       <p>
         Hi! I'm Fariz, and I'm a software engineering student at the Amsterdam
         University of Applied Sciences (AUAS). I am currently based in Almere, the
-        Netherlands. During my studies at the AUAS, I have been active as a (Wordpress) web
-        developer and as an Android app developer creating
-        <a href="/portfolio">solutions</a> for many companies, both locally and
+        Netherlands. During my studies at the AUAS, I have been active as a (Wordpress) <b>web
+        developer</b> and as an <b>Android app developer</b> creating
+        <a class="isDisabled" href="/portfolio">solutions</a> for many companies, both locally and
         internationally recognized. I aspire to always improve, and create good-looking,
         complete, digital solutions that puts smiles on the faces of those I
         create them for.
@@ -46,46 +46,87 @@
 
     <div class="container">
       <div class="skillbox">
-        <img src="">
+        <div class="imgcontainer">
+          <img src="{{asset('/images/icons8-source-code-100.png')}}">
+        </div>
         <b>Programming</b>
-        <p>Most at </p>
+        <p>Most familiar with programming languages that are inherently
+          object-oriented (Java, C#), but can also work independently with
+          languages more frequently used in web development (e.g. PHP, Javascript
+          and libraries like jQuery and node.js).</p>
       </div>
 
       <div class="skillbox">
-        <img src="">
+        <div class="imgcontainer">
+          <img src="{{asset('/images/icons8-design-100.png')}}">
+        </div>
         <b>Software Design</b>
-        <p></p>
+        <p>Even though more of a technical person, uses practically developed
+          insight and knowledge to either meddle in discussions or act independently to
+          improve design and user experience of the system in question. Posesses
+          decent knowledge of design patterns.</p>
       </div>
 
       <div class="skillbox">
-        <img src="">
+        <div class="imgcontainer">
+          <img src="{{asset('/images/icons8-workflow-100.png')}}">
+        </div>
         <b>Development Processes</b>
-        <p>Very familiar with several work methods (Agile, waterfall), educates
-        and even leads team members when necessary</p>
+        <p>Very familiar with several popular work methods (e.g. Agile, waterfall).
+          Educates and even leads team members in the use of utilized process and
+          relevant tools when necessary.</p>
       </div>
 
       <div class="skillbox">
-        <img src="">
-        <b>Image and Video Editing</b>
-        <p></p>
+        <div class="imgcontainer">
+          <img src="{{asset('/images/icons8-visualization-skill-100.png')}}">
+        </div>
+        <b>Visualization</b>
+        <p>Does not shy away from taking responsibility regarding image and video editing,
+          making posters and when no designated craftsman is present. Creations are basic
+          but effective.</p>
       </div>
 
       <div class="skillbox">
-        <img src="">
-        <b>Forward Thinking and Elaborating</b>
-        <p></p>
+        <div class="imgcontainer">
+          <img src="{{asset('/images/icons8-thumbs-up-100.png')}}">
+        </div>
+        <b>Generally a Pretty Good Guy</b>
+        <p>Ridiculously empathetic and has the tendency to want make your sides
+        hurt from time to time. Has a desire to be the big (little) brother of the team.
+        Own opinions are elaborated and others are throughly considered and
+        respected.</p>
       </div>
+    </div>
+    <div id="moreskills">
+      More specific skills are mentioned on
+      <a href="https://www.linkedin.com/in/fariz-fakkel-9086b4a1" target="_blank">my LinkedIn page</a>
+    </div>
+  </div>
 
-      <div class="skillbox">
-        <img src="">
-        <b>Being a Generally Amazing Guy 👀</b>
-        <p>Ridiculously empathic, and has the tendency to want make your sides
-        hurt from time to time</p>
-      </div>
+  <div id="references">
+    <div class="title">
+      <h2>References</h2>
     </div>
   </div>
 
   <div id="contact">
+    <div class="container">
+      <div class="title">
+        <h2>Contact</h2>
+        <b>You like coffee too? &#9749;</b>
+      </div>
+      <div id="inputcontainer">
+        <div class="inputs">
+          <input type="text" name="name">
+          <input type="text" name="email">
+          <input type="text" name="subject">
+        </div>
+        <div>
+          <textarea name="message" rows="8" cols="80"></textarea>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer>
