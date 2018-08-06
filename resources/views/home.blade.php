@@ -114,16 +114,17 @@
     <div class="container">
       <div class="title">
         <h2>Contact</h2>
-        <b>You like coffee too? &#9749;</b>
+        <b>Do you like talking over coffee too? &#9749;</b>
       </div>
+      <h3 class="pdtitle">Personal details</h3>
       <div id="inputcontainer">
         <div class="inputs">
-          <input type="text" name="name">
-          <input type="text" name="email">
-          <input type="text" name="subject">
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="E-mail">
+          <input type="text" name="subject" placeholder="Subject">
         </div>
-        <div>
-          <textarea name="message" rows="8" cols="80"></textarea>
+        <div id="messagecontainer">
+          <textarea name="message" rows="7" cols="80" placeholder="What would you like to tell me?"></textarea>
         </div>
       </div>
     </div>
