@@ -12,7 +12,6 @@ Route::get('/references/{reference}', 'ReferencesController@single');
 // Login
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 // EXAMPLE QUERIES
 // Route::get('/contact', function() {
 //   return view('contact');

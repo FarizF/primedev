@@ -117,19 +117,24 @@
         <b>Do you like talking over coffee too? &#9749;</b>
       </div>
       <h3 class="pdtitle">Personal details</h3>
-      <div id="inputcontainer">
-        <div class="inputs">
-          <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="E-mail">
-          <input type="text" name="subject" placeholder="Subject">
+      <form>
+        <div id="inputcontainer">
+          <div class="inputs">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+          <div id="messagecontainer">
+            <textarea name="message" rows="7" cols="80" placeholder="What would you like to tell me?"></textarea>
+          </div>
         </div>
-        <div id="messagecontainer">
-          <textarea name="message" rows="7" cols="80" placeholder="What would you like to tell me?"></textarea>
+        <div id="submitcontainer">
+          <input type="submit" name="send" value="Send">
+          @captcha
         </div>
-      </div>
+      </form>
     </div>
   </div>
-
   <footer>
 
   </footer>
