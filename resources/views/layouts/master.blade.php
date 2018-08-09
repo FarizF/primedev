@@ -10,8 +10,8 @@
     </head>
     <body>
         @include('layouts.nav.nav')
+        @include('layouts.nav.mobilenav')
         @yield('content')
         @include('layouts.footer')
-        @include('layouts.nav.mobilenav')
     </body>
 </html>

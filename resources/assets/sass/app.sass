@@ -119,6 +119,52 @@ nav
         align-self: center
         margin-top: 1.2rem
 
+#mobilenav
+  position: fixed
+  height: 100vh
+  background-color: rgba(0, 0, 0, 0.9)
+  padding-top: 0
+  display: none
+
+  .container
+    display: flex
+    flex-direction: column
+
+    #mobilemenuheader
+      background-color: #1A1A1A
+      width: 100%
+      min-height: 90px
+      flex: 1
+      margin-bottom: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      position: relative
+
+      img
+        max-width: 200px
+        margin: 0
+
+      #hbbutton
+        width: 1.5rem
+        position: absolute
+        margin: 0
+        right: 2rem
+        top: 50%
+
+    #menu
+      display: flex
+      flex-direction: column
+      margin: 0
+      align-items: start
+      font-size: 1.7rem
+      padding: 0 1em
+
+      a
+        width: 100%
+        padding: 0
+
 #homephoto
   color: $primary-color
   font-family: Hind
@@ -132,15 +178,18 @@ nav
     height: 100%
     background: linear-gradient(115deg, rgba(0, 96, 255, .52), rgba(221, 35, 96, .52))
     text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 0 10px
 
     #intro
+      margin: auto auto 0 auto
+      padding: 58px 45px 0
+      max-width: 1600px
       display: flex
       align-items: center
       justify-content: center
-      max-width: 1600px
-      height: 100%
-      margin: auto
-      padding: 0 45px
 
       .text
         flex: 0.6
@@ -168,9 +217,21 @@ nav
         background: url(/images/FF_Profile.jpg?d2e59fb…) 0% 20%
         background-size: cover
 
+    .sociallinks
+      display: flex
+      align-self: center
+      margin-bottom: 25px
+      margin-top: auto
+
+      a
+        margin: 0 5px
+
+        img
+          height: 24px
+
 #moreaboutme
   display: flex
-  height: 48vh
+  min-height: 48vh
 
   #actionimage
     flex: 0.4
@@ -241,6 +302,8 @@ nav
 
   #moreskills
     text-align: center
+    padding: 0 40px
+    font-weight: 500
 
     a
 
@@ -296,7 +359,7 @@ nav
             background: #f5f5f5
             margin-bottom: 20px
             padding: 16px 20px
-            width: 250px
+            max-width: 250px
             font-size: 1rem
 
         #messagecontainer
@@ -306,10 +369,80 @@ nav
             background: #f5f5f5
             padding: 16px 20px
             font-size: 1rem
-            min-height: 158px
+            min-height: 182px
+            min-width: 500px
 
       #submitcontainer
         width: 100%
+        text-align: right
+
+        .sociallinks
+          margin-top: 6px
+          float: left
+
+          a
+            margin-right: 3px
+
+            img
+              height: 24px
+
+        input
+          color: #fff
+          border: 2px solid currentColor
+          background: #2e81dc
+          padding: 8px 24px
+          font-size: 1rem
+          border-radius: 8px
+
+          &:hover
+            cursor: pointer
+
+footer
+  background-color: #1A1A1A
+  color: #FFF
+  padding-bottom: 30px
+
+  #topfooter
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .sociallinks
+      margin-top: 10px
+      margin-right: auto
+      margin-left: 30px
+
+      img
+        height: 24px
+
+    #middlecontainer
+      padding-left: 157.48px
+      padding-right: 135.5px
+
+      nav
+        position: inherit
+        padding: 30px 0 15px
+
+        #menu
+          text-align: center
+          font-size: 1.1rem
+
+          a
+            padding: 0 1em
+            font-weight: 400
+            text-decoration: none
+            position: relative
+
+    #copyright
+      margin-left: auto
+      color: #FFF
+      margin-right: 30px
+
+  .info
+    text-align: center
+    font-size: .85rem
+    margin: auto
+    max-width: 400px
 
 @media screen and (max-width: 1460px)
   #homephoto
@@ -323,8 +456,43 @@ nav
           p
             font-size: 1rem
 
+@media screen and (max-width: 1100px)
+  #moreaboutme
+    #actionimage
+      display: none
+
+    .text
+      flex: 1
+      background: url(/images/actionphotosnscroppedbwtwovrly.jpg) 53% 97%
+      padding: 40px 0
+
+  #contact
+    .container
+      max-width: 100%
+      margin: 0 30px
+
+      form
+        #inputcontainer
+          flex-direction: column
+
+          .inputs
+            margin-right: 0
+
+            input
+              max-width: 100% !important
+
+          #messagecontainer
+            textarea
+              box-sizing: content-box
+              width: 100%
+              min-width: 0
+              min-height: 230px
+              padding: 0
+
 @media screen and (max-width: 900px)
   #homephoto
+    background-attachment: inherit
+
     .gradientoverlay
       #intro
         display: flex

@@ -10440,9 +10440,7 @@ return jQuery;
 /***/ "./resources/assets/js/jcustom.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
-    console.log("body");
-});
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

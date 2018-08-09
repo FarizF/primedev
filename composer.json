@@ -8,6 +8,7 @@
         "php": ">=7.0.0",
         "albertcht/invisible-recaptcha": "^1.8",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "~1.0",
         "phpspec/phpspec": "^4.3"

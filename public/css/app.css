@@ -151,6 +151,82 @@ nav .container #hbbutton img {
   margin-top: 1.2rem;
 }
 
+#mobilenav {
+  position: fixed;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 0;
+  display: none;
+}
+
+#mobilenav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mobilenav .container #mobilemenuheader {
+  background-color: #1A1A1A;
+  width: 100%;
+  min-height: 90px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#mobilenav .container #mobilemenuheader img {
+  max-width: 200px;
+  margin: 0;
+}
+
+#mobilenav .container #mobilemenuheader #hbbutton {
+  width: 1.5rem;
+  position: absolute;
+  margin: 0;
+  right: 2rem;
+  top: 50%;
+}
+
+#mobilenav .container #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 1.7rem;
+  padding: 0 1em;
+}
+
+#mobilenav .container #menu a {
+  width: 100%;
+  padding: 0;
+}
+
 #homephoto {
   color: #FFF;
   font-family: Hind;
@@ -165,9 +241,23 @@ nav .container #hbbutton img {
   height: 100%;
   background: linear-gradient(115deg, rgba(0, 96, 255, 0.52), rgba(221, 35, 96, 0.52));
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 10px;
 }
 
 #homephoto .gradientoverlay #intro {
+  margin: auto auto 0 auto;
+  padding: 58px 45px 0;
+  max-width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,10 +267,6 @@ nav .container #hbbutton img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1600px;
-  height: 100%;
-  margin: auto;
-  padding: 0 45px;
 }
 
 #homephoto .gradientoverlay #intro .text {
@@ -215,11 +301,29 @@ nav .container #hbbutton img {
   background-size: cover;
 }
 
+#homephoto .gradientoverlay .sociallinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 25px;
+  margin-top: auto;
+}
+
+#homephoto .gradientoverlay .sociallinks a {
+  margin: 0 5px;
+}
+
+#homephoto .gradientoverlay .sociallinks a img {
+  height: 24px;
+}
+
 #moreaboutme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 48vh;
+  min-height: 48vh;
 }
 
 #moreaboutme #actionimage {
@@ -337,6 +441,8 @@ nav .container #hbbutton img {
 
 #skills #moreskills {
   text-align: center;
+  padding: 0 40px;
+  font-weight: 500;
 }
 
 #references {
@@ -418,7 +524,7 @@ nav .container #hbbutton img {
   background: #f5f5f5;
   margin-bottom: 20px;
   padding: 16px 20px;
-  width: 250px;
+  max-width: 250px;
   font-size: 1rem;
 }
 
@@ -427,11 +533,102 @@ nav .container #hbbutton img {
   background: #f5f5f5;
   padding: 16px 20px;
   font-size: 1rem;
-  min-height: 158px;
+  min-height: 182px;
+  min-width: 500px;
 }
 
 #contact .container form #submitcontainer {
   width: 100%;
+  text-align: right;
+}
+
+#contact .container form #submitcontainer .sociallinks {
+  margin-top: 6px;
+  float: left;
+}
+
+#contact .container form #submitcontainer .sociallinks a {
+  margin-right: 3px;
+}
+
+#contact .container form #submitcontainer .sociallinks a img {
+  height: 24px;
+}
+
+#contact .container form #submitcontainer input {
+  color: #fff;
+  border: 2px solid currentColor;
+  background: #2e81dc;
+  padding: 8px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+#contact .container form #submitcontainer input:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1A1A1A;
+  color: #FFF;
+  padding-bottom: 30px;
+}
+
+footer #topfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #topfooter .sociallinks {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+footer #topfooter .sociallinks img {
+  height: 24px;
+}
+
+footer #topfooter #middlecontainer {
+  padding-left: 157.48px;
+  padding-right: 135.5px;
+}
+
+footer #topfooter #middlecontainer nav {
+  position: inherit;
+  padding: 30px 0 15px;
+}
+
+footer #topfooter #middlecontainer nav #menu {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer #topfooter #middlecontainer nav #menu a {
+  padding: 0 1em;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+footer #topfooter #copyright {
+  margin-left: auto;
+  color: #FFF;
+  margin-right: 30px;
+}
+
+footer .info {
+  text-align: center;
+  font-size: .85rem;
+  margin: auto;
+  max-width: 400px;
 }
 
 @media screen and (max-width: 1460px) {
@@ -450,7 +647,54 @@ nav .container #hbbutton img {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  #moreaboutme #actionimage {
+    display: none;
+  }
+
+  #moreaboutme .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: url(/images/actionphotosnscroppedbwtwovrly.jpg) 53% 97%;
+    padding: 40px 0;
+  }
+
+  #contact .container {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+
+  #contact .container form #inputcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #contact .container form #inputcontainer .inputs {
+    margin-right: 0;
+  }
+
+  #contact .container form #inputcontainer .inputs input {
+    max-width: 100% !important;
+  }
+
+  #contact .container form #inputcontainer #messagecontainer textarea {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 100%;
+    min-width: 0;
+    min-height: 230px;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  #homephoto {
+    background-attachment: inherit;
+  }
+
   #homephoto .gradientoverlay #intro {
     display: -webkit-box;
     display: -ms-flexbox;
