@@ -4,7 +4,20 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
-{
-    //
+class Project extends Model {
+
+  /**
+    * Indicates if the model should be timestamped.
+    *
+    * @var bool
+    */
+   public $timestamps = false;
+
+   public function client() {
+     return $this->belongsTo('App\Client', 'foreign_key');
+   }
+
+   public function employer() {
+     return $this->belongsTo('App\Employer', 'foreign_key');
+   }
 }

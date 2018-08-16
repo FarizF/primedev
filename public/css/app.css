@@ -136,7 +136,7 @@ nav .container #menu a img {
   width: 100%;
 }
 
-nav .container #hbbutton {
+nav .container .hbbutton {
   width: 1.5rem;
   cursor: pointer;
   margin-right: 2rem;
@@ -144,7 +144,7 @@ nav .container #hbbutton {
   display: none;
 }
 
-nav .container #hbbutton img {
+nav .container .hbbutton img {
   width: inherit;
   -ms-flex-item-align: center;
       align-self: center;
@@ -198,7 +198,7 @@ nav .container #hbbutton img {
   margin: 0;
 }
 
-#mobilenav .container #mobilemenuheader #hbbutton {
+#mobilenav .container #mobilemenuheader .hbbutton {
   width: 1.5rem;
   position: absolute;
   margin: 0;
@@ -628,7 +628,7 @@ footer .info {
   text-align: center;
   font-size: .85rem;
   margin: auto;
-  max-width: 400px;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 1460px) {
@@ -752,7 +752,7 @@ footer .info {
     display: none;
   }
 
-  nav .container #hbbutton {
+  nav .container .hbbutton {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

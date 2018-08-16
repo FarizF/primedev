@@ -10440,7 +10440,15 @@ return jQuery;
 /***/ "./resources/assets/js/jcustom.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {});
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
+  $(".hbbutton img").on("click", function () {
+    if ($("#mobilenav").css("display") == "none") {
+      $("#mobilenav").css("display", "initial");
+    } else {
+      $("#mobilenav").css("display", "none");
+    }
+  });
+});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

@@ -3,14 +3,17 @@ use App\Reference;
 
 // Main routes
 Route::get('/', 'MainController@index');
-Route::get('/portfolio', 'MainController@toPortfolio');
 
 // References
-Route::get('/references', 'ReferencesController@index');
-Route::get('/references/{reference}', 'ReferencesController@single');
+Route::get('references', 'ReferencesController@index');
+Route::get('references/{reference}', 'ReferencesController@single');
+
+// Portfolio
+Route::get('portfolio', 'PortfolioController@index');
+//Route::get('/portfolio', 'PortfolioController@single')
 
 // Login
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 // EXAMPLE QUERIES
 // Route::get('/contact', function() {
