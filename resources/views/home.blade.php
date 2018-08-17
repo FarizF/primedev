@@ -67,7 +67,7 @@
         <p>Even though more of a technical person, uses practically developed
           insight and knowledge to either meddle in discussions or act independently to
           improve design and user experience of the system in question. Posesses
-          decent knowledge of design patterns.</p>
+          decent knowledge of the MVC design pattern and is eager to learn about more of them.</p>
       </div>
 
       <div class="skillbox">

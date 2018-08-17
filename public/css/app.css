@@ -66,12 +66,16 @@ nav {
   position: absolute;
   width: 100%;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
 nav .container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
 }
 
