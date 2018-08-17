@@ -5,15 +5,33 @@ $(document).ready(function(){
     } else {
       $("#mobilenav").css("display", "none");
     }
+  });
+
+  $(window).on("scroll load", function() {
+    determineStickyMenu();
   })
 
-  $("body").on("scroll", function() {
+  function determineStickyMenu() {
     if (window.innerWidth <= 900) {
-      if (document.scrollTop() > $("#nav").height()) {
-        console.log("stick");
+      if ($(window).scrollTop() >= $("#nav").outerHeight()) {
+        $("#nav").css({
+          "position" : "fixed",
+          "height" : "30px",
+          "background-color" : "#FFF"
+        });
+      } else {
+        $("#nav").attr("style", "");
       }
     } else {
-      
+      if ($(window).scrollTop() >= $("#nav").outerHeight()) {
+        $("#nav").css({
+          "position" : "fixed",
+          "height" : "50px",
+          "background-color" : "#FFF"
+        });
+      } else {
+        $("#nav").attr("style", "");
+      }
     }
-  })
+  }
 });

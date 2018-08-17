@@ -10448,6 +10448,34 @@ return jQuery;
       $("#mobilenav").css("display", "none");
     }
   });
+
+  $(window).on("scroll load", function () {
+    determineStickyMenu();
+  });
+
+  function determineStickyMenu() {
+    if (window.innerWidth <= 900) {
+      if ($(window).scrollTop() >= $("#nav").outerHeight()) {
+        $("#nav").css({
+          "position": "fixed",
+          "height": "30px",
+          "background-color": "#FFF"
+        });
+      } else {
+        $("#nav").attr("style", "");
+      }
+    } else {
+      if ($(window).scrollTop() >= $("#nav").outerHeight()) {
+        $("#nav").css({
+          "position": "fixed",
+          "height": "50px",
+          "background-color": "#FFF"
+        });
+      } else {
+        $("#nav").attr("style", "");
+      }
+    }
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
