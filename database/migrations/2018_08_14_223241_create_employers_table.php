@@ -16,7 +16,10 @@ class CreateEmployersTable extends Migration
         Schema::create('employers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('address_id')->nullable();
+            $table->string('directorname');
+            $table->string('branch');
+            $table->integer('pi_id')->unsigned()->nullable();
+            $table->foreign('pi_id')->references('id')->on('personalinfo')->nullable();
         });
     }
 

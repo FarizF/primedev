@@ -10,7 +10,6 @@ class Address extends Model {
   *
   * @var bool
   */
-  public $timestamps = false;
 
   public function client() {
     return $this->belongsTo('App\Client', 'foreign_key');

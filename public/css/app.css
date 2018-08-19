@@ -62,6 +62,93 @@ b {
   pointer-events: none;
 }
 
+body:not(#home) nav {
+  background-color: #FFF;
+  height: 6vh;
+}
+
+body:not(#home) nav .container #logolink img {
+  width: auto;
+  height: 100%;
+}
+
+body:not(#home) nav .container #menu {
+  margin-bottom: 0;
+}
+
+body:not(#home) nav .container #menu a {
+  color: #000;
+}
+
+body:not(#home) footer nav {
+  background-color: inherit;
+}
+
+body:not(#home) footer nav a:visited {
+  color: #FFF;
+}
+
+#nav.cms {
+  position: initial;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+  height: 100vh;
+  background-color: #181818;
+}
+
+#nav.cms .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#nav.cms .container #logolink {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 0;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav.cms .container #logolink img {
+  width: 80%;
+  height: auto;
+  margin: 0;
+}
+
+#nav.cms .container #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+#nav.cms .container #menu a {
+  color: #FFF;
+}
+
 nav {
   position: absolute;
   width: 100%;
@@ -134,6 +221,10 @@ nav .container #menu a::after {
   transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+nav .container #menu a:visited {
+  color: #FFF;
 }
 
 nav .container #menu a img {
@@ -474,18 +565,43 @@ nav .container .hbbutton img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6vh 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .information {
+  padding: 0 30px;
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7 1;
+          flex: 0.7 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://maps.googleapis.com/maps/api/staticmap?center=Almere+Buiten,&zoom=14&size=600x600&key=AIzaSyAVwu7xHwE1hgcibEl_k8nqmg8BlElzRJU&signature=SZKN48tjOSVlvn8k6WBVeYgsa9Y=");
+  display: none;
+}
+
+#contact .information p {
+  max-width: 300px;
 }
 
 #contact .container {
   max-width: 1200px;
+  margin: 0 30px;
+  padding: 6vh 0;
 }
 
 #contact .container .title {
@@ -570,6 +686,21 @@ nav .container .hbbutton img {
 
 #contact .container form #submitcontainer input:hover {
   cursor: pointer;
+}
+
+#portfoliohome,
+#referenceshome {
+  height: 94vh;
+  padding-top: 6vh;
+}
+
+#cmspage {
+  width: 80%;
+  float: left;
+}
+
+#cmspage + footer {
+  clear: left;
 }
 
 footer {

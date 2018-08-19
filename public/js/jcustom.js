@@ -10488,7 +10488,7 @@ return jQuery;
         $("#nav").css({
           "color": "#000",
           "position": "fixed",
-          "height": "45px",
+          "height": "6vh",
           "background-color": "#FFF"
         });
         $("#menu").css("margin-bottom", "0");
@@ -10501,10 +10501,8 @@ return jQuery;
         $("#nav").attr("style", "");
         $("#menu").attr("style", "");
         $("nav .container #menu a").attr("style", "");
-        $("#logolink img").attr({
-          "style": "",
-          "src": "/images/logo_farizfakkel.png"
-        });
+        $("#logolink img").attr("style", "");
+        $("#home #logolink img").attr("src", "/images/logo_farizfakkel.png");
       }
     }
   }

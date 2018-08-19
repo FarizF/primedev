@@ -30,7 +30,7 @@
       <h2>About Me</h2>
       <p>
         Hi! I'm Fariz, and I'm a software engineering student at the Amsterdam
-        University of Applied Sciences (AUAS). I am currently based in Almere, the
+        University of Applied Sciences (AUAS). I am currently based in <b>Almere</b>, the
         Netherlands. During my studies at the AUAS, I have been active as a (Wordpress) <b>web
         developer</b> and as an <b>Android app developer</b> creating
         <a class="isDisabled" href="/portfolio">solutions</a> for many companies, both locally and
@@ -114,6 +114,12 @@
   </div>
 
   <div id="contact">
+    <div class="information">
+      <p>Any business enquiries are more likely to be answered through
+        <a href="https://www.linkedin.com/in/fariz-fakkel-9086b4a1" target="_blank">my LinkedIn page</a>
+        or through the below.
+      </p>
+    </div>
     <div class="container">
       <div class="title">
         <h2>Contact</h2>

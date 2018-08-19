@@ -8,7 +8,9 @@
         @include('includes.scripts')
         @include('includes.fonts')
     </head>
-    <body>
+    @if(Request::is('/'))<body id="home">
+    @else <body>
+    @endif
         @include('layouts.nav.nav')
         @include('layouts.nav.mobilenav')
         @yield('content')

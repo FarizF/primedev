@@ -1,6 +1,12 @@
 <?php
 use App\Reference;
 
+// Admin
+Route::group(['prefix' => 'cms', 'as' => 'cms.', 'middleware' => 'auth'], function() {
+    Route::get('/', ['as' => 'index', 'uses' => 'AdminController@index']);
+    Route::get('/editportfolio', 'AdminController@editPortfolio');
+});
+
 // Main routes
 Route::get('/', 'MainController@index');
 
@@ -30,3 +36,5 @@ Route::get('portfolio', 'PortfolioController@index');
 //
 //     return view('project.index', compact($projects));
 // })
+
+Auth::routes();
