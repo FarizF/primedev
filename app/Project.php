@@ -20,4 +20,17 @@ class Project extends Model {
    public function employer() {
      return $this->belongsTo('App\Employer', 'foreign_key');
    }
+
+   public function images() {
+     return $this->hasMany('App\Image', 'foreign_key');
+   }
+
+   /**
+    * The attributes that are mass assignable.
+    *
+    * @var array
+    */
+   protected $fillable = [
+       'name', 'startdate', 'duration', 'employer_id', 'client_id'
+   ];
 }

@@ -19,7 +19,7 @@ class CreateClientsTable extends Migration
             $table->string('client_name');
             $table->string('branch');
             $table->integer('pi_id')->unsigned()->nullable();
-            $table->foreign('pi_id')->references('id')->on('personalinfo')->nullable();
+            $table->foreign('pi_id')->references('id')->on('personalinfo')->nullable()->onDelete('cascade');
         });
     }
 

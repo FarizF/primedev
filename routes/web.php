@@ -4,7 +4,21 @@ use App\Reference;
 // Admin
 Route::group(['prefix' => 'cms', 'as' => 'cms.', 'middleware' => 'auth'], function() {
     Route::get('/', ['as' => 'index', 'uses' => 'AdminController@index']);
-    Route::get('/editportfolio', 'AdminController@editPortfolio');
+
+    Route::group(['prefix' => 'manageportfolio', 'as' => 'manageportfolio.', 'middleware' => 'auth'], function() {
+      Route::get('/', ['as' => 'index', 'uses' => 'AdminController@indexPortfolio']);
+      Route::get('add', ['as' => 'add', 'uses' => 'AdminController@addProjectGet']);
+
+      Route::post('add', ['as' => 'add', 'uses' => 'AdminController@addProject']);
+    });
+
+    Route::group(['prefix' => 'manageemployers', 'as' => 'manageemployers.', 'middleware' => 'auth'], function() {
+      Route::get('/', ['as' => 'index', 'uses' => 'AdminController@indexEmployers']);
+      Route::get('add', ['as' => 'add', 'uses' => 'AdminController@addEmployerGet']);
+
+      Route::post('add', ['as' => 'add', 'uses' => 'AdminController@addEmployer']);
+    });
+
 });
 
 // Main routes

@@ -19,7 +19,7 @@ class CreateEmployersTable extends Migration
             $table->string('directorname');
             $table->string('branch');
             $table->integer('pi_id')->unsigned()->nullable();
-            $table->foreign('pi_id')->references('id')->on('personalinfo')->nullable();
+            $table->foreign('pi_id')->references('id')->on('personalinfo')->nullable()->onDelete('cascade');
         });
     }
 

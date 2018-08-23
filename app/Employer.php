@@ -19,4 +19,8 @@ class Employer extends Model {
   public function projects() {
     return $this->hasMany('App\Project', 'foreign_key');
   }
+
+  public function image() {
+    return $this->hasOne('App\Image', 'foreign_key');
+  }
 }

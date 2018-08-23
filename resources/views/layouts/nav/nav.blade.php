@@ -1,4 +1,6 @@
-@if (Auth::user()->isAdmin() && Request::is('cms*')) <nav id="nav" class="cms">
+@if (Auth::check() && Request::is('cms*'))
+  @if (Auth::user()->isAdmin()) <nav id="nav" class="cms">
+  @endif
 @else <nav id="nav">
 @endif
   <div class="container">
