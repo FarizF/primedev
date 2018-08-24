@@ -10444,8 +10444,10 @@ return jQuery;
   $(".hbbutton img").on("click", function () {
     if ($("#mobilenav").css("display") == "none") {
       $("#mobilenav").css("display", "initial");
+      $('body').on('scroll mousewheel touchmove', stopScrolling);
     } else {
       $("#mobilenav").css("display", "none");
+      $('body').off('scroll mousewheel touchmove', stopScrolling);
     }
   });
 
@@ -10464,7 +10466,7 @@ return jQuery;
           "background-color": "#FFF"
         });
         $("#menu").css("margin-bottom", "0");
-        $("nav .container #menu a").css("color", "#191919");
+        $("#nav .container #menu a").css("color", "#191919");
         $("#logolink img").css({
           "height": "100%",
           "width": "auto"
@@ -10492,7 +10494,7 @@ return jQuery;
           "background-color": "#FFF"
         });
         $("#menu").css("margin-bottom", "0");
-        $("nav .container #menu a").css("color", "#191919");
+        $("#nav .container #menu a").css("color", "#191919");
         $("#logolink img").css({
           "height": "100%",
           "width": "auto"
@@ -10500,11 +10502,17 @@ return jQuery;
       } else {
         $("#nav").attr("style", "");
         $("#menu").attr("style", "");
-        $("nav .container #menu a").attr("style", "");
+        $("#nav .container #menu a").attr("style", "");
         $("#logolink img").attr("style", "");
         $("#home #logolink img").attr("src", "/images/logo_farizfakkel.png");
       }
     }
+  }
+
+  function stopScrolling(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
   }
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))

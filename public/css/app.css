@@ -84,10 +84,6 @@ body:not(#home) footer nav {
   background-color: inherit;
 }
 
-body:not(#home) footer nav a:visited {
-  color: #FFF;
-}
-
 #nav.cms {
   position: initial;
   width: 20%;
@@ -593,7 +589,6 @@ nav .container .hbbutton img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("https://maps.googleapis.com/maps/api/staticmap?center=Almere+Buiten,&zoom=14&size=600x600&key=AIzaSyAVwu7xHwE1hgcibEl_k8nqmg8BlElzRJU&signature=SZKN48tjOSVlvn8k6WBVeYgsa9Y=");
   display: none;
 }
 
@@ -774,6 +769,10 @@ footer #topfooter #middlecontainer nav #menu a {
   font-weight: 400;
   text-decoration: none;
   position: relative;
+}
+
+footer #topfooter #middlecontainer nav #menu a:visited {
+  color: #FFF;
 }
 
 footer #topfooter #copyright {
