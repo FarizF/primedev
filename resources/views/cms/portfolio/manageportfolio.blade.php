@@ -22,15 +22,28 @@
           <td>
             {{$project->duration}}
           </td>
-          {{-- <td>
-            {{$project->employer}}
+          <td>
+            @if (isset($project->employer->name))
+              {{$project->employer->name}}
+            @endif
           </td>
           <td>
-            {{$project->client->name}}
+            @if (isset($project->client->name))
+              {{$project->client->name}}
+            @endif
           </td>
           <td>
             {{$project->description}}
-          </td> --}}
+          </td>
+          <td>
+            <a href="{{ route('cms.manageportfolio.edit', ['id' => $project->id]) }}">Edit</a>
+          </td>
+          <td>
+            <form class="" action="{{ route('cms.manageportfolio.delete', ['id' => $project->id]) }}" method="post">
+              @method('delete')
+              <input type="submit" name="delete" value="Delete">
+            </form>
+          </td>
         </tr>
       @endforeach
     </table>

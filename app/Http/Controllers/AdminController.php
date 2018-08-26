@@ -21,7 +21,7 @@ class AdminController extends Controller {
 
   // Portfolio
   public function indexPortfolio() {
-    $projects = DB::table('projects')->get();
+    $projects = Project::all();
 
     return view('cms.portfolio.manageportfolio', ['projects' => $projects]);
   }
@@ -73,6 +73,20 @@ class AdminController extends Controller {
     return Redirect::back();
   }
 
+  public function editProject($id) {
+
+  }
+
+  public function editProjectGet($id) {
+
+  }
+
+  public function deleteProject($id) {
+    App\Project::find($id)->delete();
+
+    return Redirect::back();
+  }
+
 
   // Employers
   public function indexEmployers() {
@@ -92,6 +106,16 @@ class AdminController extends Controller {
     $employer->branch = $request->input('branch');
     if ($request->input('addressinfo')) $employer->pi_id = $request->input('addressinfo');
     $employer->save();
+
+    return Redirect::back();
+  }
+
+  public function editEmployer($id) {
+
+  }
+
+  public function deleteEmployer($id) {
+    App\Employer::find($id)->delete();
 
     return Redirect::back();
   }

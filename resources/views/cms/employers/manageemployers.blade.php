@@ -7,11 +7,11 @@
     <a href="{{ route('cms.manageemployers.add') }}">Add Employer</a>
 
     <table>
-      {{-- <tr>
+      <tr>
         <th>Project name</th><th>Startdate</th><th>Duration</th><th>Employer</th><th>Client</th><th>Description</th>
-      </tr> --}}
+      </tr>
 
-      {{-- @foreach($projects as $project)
+      @foreach($projects as $project)
         <tr>
           <td>
             {{$project->name}}
@@ -31,8 +31,15 @@
           <td>
             {{$project->description}}
           </td>
+
+          <td>
+            <a href="#">Edit</a>
+          </td>
+          <td>
+            <a href="#">Delete</a>
+          </td>
         </tr>
-      @endforeach --}}
+      @endforeach
     </table>
   </div>
 

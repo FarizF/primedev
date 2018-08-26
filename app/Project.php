@@ -14,11 +14,11 @@ class Project extends Model {
    public $timestamps = false;
 
    public function client() {
-     return $this->belongsTo('App\Client', 'foreign_key');
+     return $this->belongsTo('App\Client', 'client_id');
    }
 
    public function employer() {
-     return $this->belongsTo('App\Employer', 'foreign_key');
+     return $this->belongsTo('App\Employer', 'employer_id');
    }
 
    public function images() {

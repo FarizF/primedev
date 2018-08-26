@@ -697,7 +697,7 @@ nav .container .hbbutton img {
   float: left;
 }
 
-#cmspage form {
+#cmspage #containerform {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,8 +712,8 @@ nav .container .hbbutton img {
   max-width: 400px;
 }
 
-#cmspage form input,
-#cmspage form select {
+#cmspage #containerform input,
+#cmspage #containerform select {
   margin: 5px;
 }
 

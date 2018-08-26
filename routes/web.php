@@ -5,18 +5,24 @@ use App\Reference;
 Route::group(['prefix' => 'cms', 'as' => 'cms.', 'middleware' => 'auth'], function() {
     Route::get('/', ['as' => 'index', 'uses' => 'AdminController@index']);
 
+    // Portfolio
     Route::group(['prefix' => 'manageportfolio', 'as' => 'manageportfolio.', 'middleware' => 'auth'], function() {
       Route::get('/', ['as' => 'index', 'uses' => 'AdminController@indexPortfolio']);
       Route::get('add', ['as' => 'add', 'uses' => 'AdminController@addProjectGet']);
+      Route::get('edit', ['as' => 'edit', 'uses' => 'AdminController@editProjectGet']);
 
       Route::post('add', ['as' => 'add', 'uses' => 'AdminController@addProject']);
+      Route::delete('delete', ['as' => 'delete', 'uses' => 'AdminController@deleteProject']);
+      Route::patch('edit', ['as' => 'edit', 'uses' => 'AdminController@editProject']);
     });
 
+    // Employer
     Route::group(['prefix' => 'manageemployers', 'as' => 'manageemployers.', 'middleware' => 'auth'], function() {
       Route::get('/', ['as' => 'index', 'uses' => 'AdminController@indexEmployers']);
       Route::get('add', ['as' => 'add', 'uses' => 'AdminController@addEmployerGet']);
 
       Route::post('add', ['as' => 'add', 'uses' => 'AdminController@addEmployer']);
+      Route::delete('delete', ['as' => 'delete', 'uses' => 'AdminController@deleteEmployer']);
     });
 
 });

@@ -4,7 +4,7 @@
 
 @if (Auth::user()->isAdmin())
   <div id="cmspage">
-    <form action="{{ route('cms.manageemployers.add') }}" method="post" enctype="multipart/form-data" files="true">
+    <form action="{{ route('cms.manageemployers.add') }}" method="post" enctype="multipart/form-data" files="true" id="containerform">
       @csrf
       @method('post')
       <input type="text" name="name" placeholder="Employer companyname*"/>
