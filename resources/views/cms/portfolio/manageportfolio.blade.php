@@ -40,6 +40,7 @@
           </td>
           <td>
             <form class="" action="{{ route('cms.manageportfolio.delete', ['id' => $project->id]) }}" method="post">
+              @csrf
               @method('delete')
               <input type="submit" name="delete" value="Delete">
             </form>

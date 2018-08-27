@@ -11,25 +11,25 @@
         <th>Project name</th><th>Startdate</th><th>Duration</th><th>Employer</th><th>Client</th><th>Description</th>
       </tr>
 
-      @foreach($projects as $project)
+      @foreach($employers as $employer)
         <tr>
           <td>
-            {{$project->name}}
+            {{$employer->name}}
           </td>
           <td>
-            {{$project->startdate}}
+            {{$employer->startdate}}
           </td>
           <td>
-            {{$project->duration}}
+            {{$employer->duration}}
           </td>
           <td>
-            {{$project->employer}}
+            {{$employer->employer}}
           </td>
           <td>
-            {{$project->client->name}}
+            {{$employer->client->name}}
           </td>
           <td>
-            {{$project->description}}
+            {{$employer->description}}
           </td>
 
           <td>

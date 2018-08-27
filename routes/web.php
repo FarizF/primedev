@@ -12,7 +12,7 @@ Route::group(['prefix' => 'cms', 'as' => 'cms.', 'middleware' => 'auth'], functi
       Route::get('edit', ['as' => 'edit', 'uses' => 'AdminController@editProjectGet']);
 
       Route::post('add', ['as' => 'add', 'uses' => 'AdminController@addProject']);
-      Route::delete('delete', ['as' => 'delete', 'uses' => 'AdminController@deleteProject']);
+      Route::delete('delete/{id}', ['as' => 'delete', 'uses' => 'AdminController@deleteProject']);
       Route::patch('edit', ['as' => 'edit', 'uses' => 'AdminController@editProject']);
     });
 

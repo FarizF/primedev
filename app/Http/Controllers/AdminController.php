@@ -70,11 +70,11 @@ class AdminController extends Controller {
       }
     }
 
-    return Redirect::back();
+    return redirect()->route('cms.manageportfolio.index');
   }
 
   public function editProject($id) {
-
+      return redirect()->route('cms.manageportfolio.index');
   }
 
   public function editProjectGet($id) {
@@ -82,7 +82,7 @@ class AdminController extends Controller {
   }
 
   public function deleteProject($id) {
-    App\Project::find($id)->delete();
+    Project::find($id)->delete();
 
     return Redirect::back();
   }
@@ -107,15 +107,15 @@ class AdminController extends Controller {
     if ($request->input('addressinfo')) $employer->pi_id = $request->input('addressinfo');
     $employer->save();
 
-    return Redirect::back();
+    return redirect()->route('cms.manageemployers.index');
   }
 
   public function editEmployer($id) {
-
+    return redirect()->route('cms.manageemployers.index');
   }
 
   public function deleteEmployer($id) {
-    App\Employer::find($id)->delete();
+    Employer::find($id)->delete();
 
     return Redirect::back();
   }
